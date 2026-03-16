@@ -1,0 +1,13 @@
+16/03/26
+- end parameter for print function signifies the space between one print function and the next. default is \n which creates a new line.
+- code can be simplified or shorten in order to take up less space eg.
+   - instead of writing: book = input("What is your favourite book?: ")
+                         book = book.strip()
+                         book = book.title()
+
+   - you can write:      book = input("What is your favourite book?: ")       
+                         book = book.strip().title()
+
+   - or even:            book = book = input("What is your favourite book?: ").strip().title()  
+
+- most python functions have their own inate functions (or methods) that can be called upon using a .() method.
