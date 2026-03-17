@@ -53,3 +53,44 @@ print("The circumference of the circle is", circum_of_circle)
 print()
 
 
+# Calculate the slope, x-intercept and y-intercept of y = 2x -2
+x1 = 1
+x2 = 2
+y1 = 2*(1) - 2
+y2 = 2*(2) - 2
+
+slope = (y2-y1)/(x2-x1)
+
+x_intercept = 2 / 2
+y_intercept = -2
+
+print("The slope of the y = 2x - 2 is", slope)
+print("The x-intercept is", x_intercept, "and the y-intercept is", y_intercept)
+print()
+
+
+# Slope is (m = y2-y1 / x2-x2). Find the slope and Euclidean distance between 
+# point (2, 2) and point (6,10)
+
+point_one = [2,2]
+point_two = [6,10]
+
+y1 = point_one[1]
+y2 = point_two[1]
+x1 = point_one[0]
+x2 = point_two[0]
+
+slope_one = (y2-y1)/(x2-x1)
+euclidean_distance = ((x2-x1)**2 + (y2-y1)**2)**.5
+
+print("The slope between the points (2, 2) and (6, 10) is", slope_one)
+print("The Euclidean Distance between the points (2, 2) and (6, 10) is", round(euclidean_distance, 2))
+print()
+
+
+# Compare the previous two slopes
+print("first slope:", slope, "> second slope: ", slope_one , ":", slope > slope_one)
+print("first slope:", slope, "< second slope: ", slope_one , ":", slope < slope_one)
+print("first slope:", slope, "!= second slope: ", slope_one , ":", slope != slope_one)
+print("first slope:", slope, "== second slope: ", slope_one , ":", slope == slope_one)
+
