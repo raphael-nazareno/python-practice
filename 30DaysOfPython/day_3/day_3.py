@@ -38,6 +38,7 @@ perimeter_of_rectangle = 2 * (length + width)
 
 print("The area of the rectangle is", area_of_rectangle)
 print("The perimetere of the rectangle is", perimeter_of_rectangle )
+print()
 
 
 # Get radius of a circle using prompt. 
@@ -49,6 +50,6 @@ circum_of_circle = 2 * 3.14 * radius
 
 print("The area of the circle is", area_of_circle)
 print("The circumference of the circle is", circum_of_circle)
-
+print()
 
 
