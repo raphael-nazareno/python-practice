@@ -5,29 +5,15 @@
 a = 3
 b = 4
 
-print("Operations:")
+print("Arithmetic Operations:")
 
-# addition(+)
-print(a + b)
-
-# subtraction(-)
-print(a - b)
-
-# multiplication(*)
-print(a * b)
-
-# modulus(%)
-print(a % b)
-
-# division(/)
-print(a / b)
-
-# exponential(**)
-print(a ** b)
-
-# floor division operator(//)
-print(a // b)
-
+print(a + b) # addition(+)
+print(a - b) # subtraction(-)
+print(a * b) # multiplication(*)
+print(a % b) # modulus(%)
+print(a / b) # division(/)
+print(a ** b) #exponential(**)
+print(a // b) # floor division operator(//)
 
 
 # Excercise: Level 3
