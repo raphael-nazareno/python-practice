@@ -68,3 +68,58 @@ print("The str 'Coding For All' ends with substring 'coding':", slogan.endswith(
 print()
 
 # '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+slogan_with_spaces = "   Coding For All      "
+slogan_with_spaces_removed = slogan_with_spaces.strip()
+print(slogan_with_spaces_removed)
+print()
+
+# The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. 
+# Join the list with a hash with space string.
+library = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+new_list = " - ".join(library)
+
+print(new_list)
+print()
+
+# Use the new line escape sequence to separate the following sentences.
+# I am enjoying this challenge.
+# I just wonder what is next.
+print("I am enjoying this challenge.\n")
+print("I just wonder what is next.")
+print()
+
+
+# Use a tab escape sequence to write the following lines
+# Name      Age     Country   City
+# Asabeneh  250     Finland   Helsinki
+print("Name\t  Age\tCountry\t City")
+print("Asabeneh  250\tFinland\t Helsinki")
+print()
+
+# Use the string formatting method to display the following:
+# The area of a circle with radius 10 is 314 meters square.
+radius = 10
+area = 3.14 * radius ** 2
+
+print(f"The area of a circle with radius {radius} is {area} meters square.")
+print()
+
+# Make the following using string formatting methods:
+# 8 + 6 = 14                      
+# 8 - 6 = 2
+# 8 * 6 = 48
+# 8 / 6 = 1.33
+# 8 % 6 = 2                                                   
+# 8 // 6 = 1                                                    
+# 8 ** 6 = 262144        
+                                                                                                
+a = 8                                                                                                          
+b = 6  
+
+print(f"{a} + {b} =", a + b)
+print(f"{a} - {b} =", a - b)
+print(f"{a} * {b} =", a * b)
+print(f"{a} / {b} =", round(a / b, 2))
+print(f"{a} % {b} =", a % b)
+print(f"{a} // {b} =", a // b)
+print(f"{a} ** {b} =", a ** b)
