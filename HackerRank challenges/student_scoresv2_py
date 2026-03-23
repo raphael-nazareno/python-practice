@@ -1,0 +1,46 @@
+python_students = []
+students = []
+
+for a in range(int(input())):
+    name = input("name:")
+    score = float(input("score:"))
+
+    records = [name, score]
+    python_students.append(records) # name and score to python_students list as nested list [[name, score], [name,score]]
+
+
+lowest_score=1000
+
+for result in python_students:
+    if result[1] < lowest_score:
+        lowest_score = result[1]
+
+second_lowest_score=1000
+for result in python_students:
+    if result[1] > second_lowest_score and result[1] < second_lowest_score:
+        second_min = result[1]
+
+for result in python_students:
+    if result[1] == second_min:
+        students.append(result[0])
+
+students.sort()
+
+for x in students:
+    print(x)                   # print students name who score the second lowest    
+
+
+
+
+    
+
+
+    
+
+
+
+
+
+
+
+        
