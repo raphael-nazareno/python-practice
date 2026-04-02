@@ -19,22 +19,21 @@ skill_priorities = {"fullstack": 1,
 skill_list = person_dict['skills']
 title = "unknown"
 
-
 # SCORING SYSTEM
 for category, required_skills in skill_categories.items(): # Loops through keys in dict, assigned category to keys and required_skill to values                                                        
     for required_skill in required_skills:
         if required_skill in skill_list:
             skill_scores[category] += 1   # If a required skill is found in the person's skill list, the category the skill is associated with is assigned one point
 
+
 # Determining highest score
 scores = skill_scores.values()  
 highest_score = max(scores)    # Evalutes highest score from a list of the categories' scores
-
 high_score_categories =[]
 
 for score in skill_scores.items():       # Checks the scores, compares those scores with the highest score found and if a score is equal to the highest, 
     if score[1] == highest_score:        # its corresponding category is noted in a list
-        high_score_categories.append(score[0])
+        high_score_categories.append(score[0])  
 
 
 # Determining title from highest scoring category
@@ -47,7 +46,6 @@ elif len(high_score_categories) > 1:   # Checks if more than one category has th
         if skill_priorities[current_best] > skill_priorities[category]:
             current_best = category
     title = current_best
-
 
 
 # Outputting Job title depending on skillset
