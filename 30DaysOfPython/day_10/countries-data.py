@@ -2636,17 +2636,19 @@ print(f"There are {number_of_languages} languages in the country data.")
 
 # Find the ten most spoken languages from the data
 print()
+language_list = []
 
-def get_second(item):
-    return item[1]
+for language in language_dict:
+    count = language_dict[language]
+    language_list.append([count, language])   
 
-language_list = list(language_dict.items())
-language_list.sort(key=get_second, reverse=True)
+language_list.sort()
+language_list.reverse()
 top_ten_languages = language_list[:10]
 
 rank = 1
-for language, language_count in top_ten_languages:
-    print(f"{rank}.  {language}: {language_count}" )
+for count, language in top_ten_languages:
+    print(f"{rank}. {language}: {count}")
     rank += 1
 
 
@@ -2658,15 +2660,16 @@ for country in country_data:
     name = country['name']
     population = country['population']
 
-    population_info = (name, population)
+    population_info = (population, name)
 
     population_list.append(population_info)        
 
-population_list.sort(key=get_second, reverse=True)
+population_list.sort()
+population_list.reverse()
 top_ten_countries = population_list[:10]
 
 rank = 1
-for country, population in top_ten_countries:
+for population, country in top_ten_countries:
     print(f"{rank}. {country}: {population:,}")
     rank += 1
 

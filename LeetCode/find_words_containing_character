@@ -1,0 +1,26 @@
+words = ["abc","bcd","aaaa","cbc"]
+x = "a"
+
+##
+which_words_contain_character = []
+index = 0
+for word in words:
+    if x in word:
+        which_words_contain_character.append(index)
+    index += 1
+
+print(which_words_contain_character)
+
+
+##
+which_words_contain_character = []
+for index, word in enumerate(words):
+    if x in word:
+        which_words_contain_character.append(index)
+
+print(which_words_contain_character)
+
+
+##
+index_of_characters = [index for index, word in enumerate(words) if x in word]
+print(index_of_characters)
