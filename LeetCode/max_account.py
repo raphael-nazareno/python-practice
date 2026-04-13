@@ -13,5 +13,5 @@ print(max_wealth)
 
 for account in accounts:
         total = sum(account)
-        if total > max_health:
+        if total > max_wealth:
             max_wealth = total

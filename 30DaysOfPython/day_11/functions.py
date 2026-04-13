@@ -103,7 +103,58 @@ def capitalise_list_items(lst):
 
 print(capitalise_list_items(["hello","minecraft","a","b","c"]))
 
-#
+# Declare a function named add_item. It takes a list and an item parameters. It returns a list with the item added at the end.
+food_stuff = ["Tomato", "Potato"]
+def add_item(lst, item):
+    lst.append(item)
+    return lst
+
+print(add_item(food_stuff, "Grape"))
+
+# Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it.
+def remove_item(lst, item):
+    lst.remove(item)
+    return lst
+
+print(remove_item(food_stuff, "Grape"))
+
+# Declare a function named sum_of_numbers. It takes a number parameter and it adds all the numbers in that range.
+def sum_of_numbers(num):
+    sum = 0
+    for numbers in range(0,num+1):
+        sum += numbers
+    return sum
+
+print(sum_of_numbers(5))
+print(sum_of_numbers(10))
+print(sum_of_numbers(100))
+
+# Declare a function named sum_of_odds. It takes a number parameter and it adds all the odd numbers in that range.
+def sum_of_odds(num):
+    sum = 0
+    for number in range(0,num+1):
+        if number % 2 != 0:
+            sum += number
+    return sum
+
+print(sum_of_odds(5))
+print(sum_of_odds(10))
+print(sum_of_odds(100))
+
+# Declare a function named sum_of_even. It takes a number parameter and it adds all the even numbers in that range.
+def sum_of_even(num):
+    sum = 0
+    for number in range(0,num+1):
+        if number % 2 == 0:
+            sum += number
+    return sum
+
+print(sum_of_even(5))
+print(sum_of_even(10))
+print(sum_of_even(15))
+
+
+# 
         
 
 
